@@ -1,6 +1,6 @@
 # cybersec_soc_ulgc CTF Team
 
-This repository serves the official web page for the `cybersec_soc_ulgc` CTF team. 
+This repository serves the official web page for the `cybersec_soc_ulgc` CTF team.
 
 Join the team at [ULGC Discord Server](https://my.london.ac.uk/group/student/community)!
 
