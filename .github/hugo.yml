@@ -13,12 +13,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Remote all web content 
-      run: |
-        rm -f *
-        rm -rf ./public
-        rm -rf ./hugo-site
-
     - name: Checkout repository
       uses: actions/checkout@v4
       with: 
@@ -32,7 +26,6 @@ jobs:
 
     - name: Setup checkout and print diagnostics
       run: |
-        mv -f ./hugo-site/* ./
         pwd
         ls -al
 
