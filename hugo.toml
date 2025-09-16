@@ -1,0 +1,77 @@
+# Basic config
+baseURL = "/"
+theme = "hugo-simple"
+defaultContentLanguage = "en"
+languageCode = "en"                # zh-Hans
+title = "cybersec_soc_ulgc"
+copyright = ""
+mainSections = ["writeups"]
+
+# Generate a nice robots.txt for SEO
+enableRobotsTXT = true
+
+# https://github.com/gohugoio/hugo/issues/12152
+capitalizeListTitles = false
+
+# Generate "Bearblog"-like URLs !only!, see https://bearblog.dev/.
+disableKinds = ["taxonomy"]
+# ignoreErrors = ["error-disable-taxonomy"]
+[taxonomies]
+tag = "tags"
+
+[permalinks]
+blog = "/:slugorcontentbasename/"
+writeup = "/:slugorcontentbasename/"
+tags = "/writeups/:slug"
+
+[markup.goldmark.renderer]
+unsafe = true
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 3
+[markup.highlight]
+lineNos = true
+lineNumbersInTable = false
+noClasses = true
+style = "catppuccin-mocha"
+
+[params]
+title = "cybersec_soc_ulgc"
+description = "Official web page for the CTF team cybersec_soc_ulgc"
+favicon = "images/logo-soc.png"
+dateFormat = "2006-01-02"
+hideMadeWithLine = false
+hideRSSLink = true
+
+[params.author]
+name = "Shruti Priya"
+email = "sp460@student.london.ac.uk"
+
+[[menu.main]]
+name = "Home"
+pageRef = "/"
+weight = 10
+[[menu.main]]
+name = "Writeups"
+pageRef = "/writeups/"
+weight = 20
+[[menu.main]]
+name = "Blog"
+pageRef = "/blog/"
+weight = 30
+[[menu.main]]
+name = "Members"
+pageRef = "/members/"
+weight = 40
+
+[services.rss]
+limit = 42
+
+[pagination]
+pagerSize = 16
+
+[outputs]
+# Generate RSS for home only.
+section = ["html"]
+taxonomy = ["html"]
+term = ["html"]
