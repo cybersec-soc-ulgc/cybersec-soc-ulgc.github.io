@@ -42,6 +42,7 @@ favicon = "images/logo-soc.png"
 dateFormat = "2006-01-02"
 hideMadeWithLine = false
 hideRSSLink = true
+images = ["images/opengraph-image.png"]
 
 [params.author]
 name = "Shruti Priya"
