@@ -30,10 +30,10 @@ jobs:
         ls -al
 
     - name: GC
-      run: hugo --gc --config ./hugo.yaml
+      run: hugo --gc --config ./hugo.toml
 
     - name: Build
-      run: hugo --config ./hugo.yaml --buildDrafts --ignoreCache --enableGitInfo --minify
+      run: hugo --config ./hugo.toml --buildDrafts --ignoreCache --enableGitInfo --minify
 
     - name: Setup Pages
       uses: actions/configure-pages@v5
