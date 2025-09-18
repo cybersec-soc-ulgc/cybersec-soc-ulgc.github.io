@@ -1,6 +1,5 @@
 ---
 title: "cybersec_soc_ulgc"
-description: "Welcome to the blogpage for the CTF Team: cybersec_soc_ulgc."
 ---
 
 > Let's all `XOR` with our best selves
