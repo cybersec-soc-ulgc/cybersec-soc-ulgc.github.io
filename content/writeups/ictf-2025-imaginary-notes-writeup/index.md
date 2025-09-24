@@ -32,7 +32,7 @@ As the challenge text stated, the API key is all you need to access the database
 
 ## Collating the data and preparing the attack
 
-Given the API key, the URL to access the database, and the knowledge that the password is in the 'users' table in the database, I was read to start preparing an attack.
+Given the API key, the URL to access the database, and the knowledge that the password is in the 'users' table in the database, I was ready to start preparing an attack.
 
 I used ChatGPT to give me an example snippet of code to connect to a [Supabase file-based database](https://supabase.com/docs/reference/javascript/introduction), given I was providing the API key and the URL.
 
