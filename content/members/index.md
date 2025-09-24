@@ -10,6 +10,6 @@ Meet our active members:
 {{< /notice >}}
 
 {{< notice >}}
-**David Craddock** (`@davmonster`)
+**[David Craddock](https://davidcraddock.net)** (`@davmonster`)
 <br>Works on: `web`
 {{< /notice >}}
