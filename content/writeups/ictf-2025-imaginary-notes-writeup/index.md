@@ -20,9 +20,9 @@ I used the Firefox developer console (press F12 in Firefox) to access the 'netwo
 
 I then collected these together, concatenated them together, and fed them to ChatGPT, asking it to de-obfuscate the code and explain it.
 
-The code, typical to most JavaScript, was [minified](https://en.wikipedia.org/wiki/Minification_(programming), which means it was deliberately rewritten by a minification library to both compress the file size of the resultant JavaScript files, but also to help [obfuscate](https://en.wikipedia.org/wiki/Obfuscation_(software)) it.
+The code, typical to most JavaScript, was [minified](https://en.wikipedia.org/wiki/Minification_(programming)), which means it was deliberately rewritten by a minification library to both compress the file size of the resultant JavaScript files, but also to help [obfuscate](https://en.wikipedia.org/wiki/Obfuscation_(software)) it.
 
-GenAI agents are very good at deminifying javascript, and replacing the minified code with reasonable guesses at descriptive variable names and method/function names.
+GenAI agents are very good at deminifying javascript, e.g. replacing the minified code with reasonable guesses at descriptive variable names and method/function names.
 
 Once I had de-obfuscated the code, it was possible to trace through the execution of the code to a certain extent in my code editor by sight, and also to extract two important variables.
 
@@ -40,9 +40,9 @@ I then copied and pasted this snippet text into the JavaScript console as part o
 
 Despite looking at the documentation of the Supabase JavaScript database, initially I struggled getting the syntax correct, once connected, to execute a SQL `SELECT PASSWORD FROM USERS WHERE 'username' = admin` type query.
 
-So again I used ChatGPT to help generate the correct syntax in JavaScript using the Supabase JavaScript library, making sure I included it correctly at the top of the copy and pasted attack script.
+So again, I used ChatGPT to help generate the correct syntax in JavaScript using the Supabase JavaScript library, making sure I included it correctly at the top of the copy and pasted attack script.
 
-Once I had fully fleshed out the attack script with the help of the above, and tested it until it works, I was able to retrieve the `password` field from the admin user in the user table in the Supabase database, and that turned out to be the 'flag' token that I needed to complete the challenge.
+Once I had fully fleshed out the attack script with the help of the above, and tested it until it works, I was able to retrieve the `"password"` field from the admin user in the user table in the Supabase database, and that turned out to be the 'flag' token that I needed to complete the challenge.
 
 ## Conclusion
 
