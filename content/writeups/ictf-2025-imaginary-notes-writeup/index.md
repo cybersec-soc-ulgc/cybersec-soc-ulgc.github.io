@@ -22,7 +22,7 @@ I then collected these together, concatenated them together, and fed them to Cha
 
 The code, typical to most JavaScript, was [minified](https://en.wikipedia.org/wiki/Minification_(programming)), which means it was deliberately rewritten by a minification library to both compress the file size of the resultant JavaScript files, but also to help [obfuscate](https://en.wikipedia.org/wiki/Obfuscation_(software)) it.
 
-GenAI agents are very good at deminifying javascript, e.g. replacing the minified code with reasonable guesses at descriptive variable names and method/function names.
+GenAI agents are very good at "deminifying" javascript, e.g. replacing the minified code with reasonable guesses at descriptive variable names and method/function names.
 
 Once I had de-obfuscated the code, it was possible to trace through the execution of the code to a certain extent in my code editor by sight, and also to extract two important variables.
 
@@ -38,7 +38,7 @@ I used ChatGPT to give me an example snippet of code to connect to a [Supabase f
 
 I then copied and pasted this snippet text into the JavaScript console as part of the developer console in Firefox (F12). It acts as a JavaScript [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) and has access to all the in-browser data and objects that the browser would.
 
-Despite looking at the documentation of the Supabase JavaScript database, initially I struggled getting the syntax correct, once connected, to execute a SQL `SELECT PASSWORD FROM USERS WHERE 'username' = admin` type query.
+Despite looking at the documentation of the Supabase JavaScript database, initially I struggled getting the syntax correct, once connected, to execute a SQL `SELECT PASSWORD FROM USERS WHERE 'username' = 'admin'` type query.
 
 So again, I used ChatGPT to help generate the correct syntax in JavaScript using the Supabase JavaScript library, making sure I included it correctly at the top of the copy and pasted attack script.
 
