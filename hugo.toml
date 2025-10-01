@@ -57,13 +57,17 @@ name = "Writeups"
 pageRef = "/writeups/"
 weight = 20
 [[menu.main]]
+name = "WCS"
+pageRef = "/weekly-challenges-series/"
+weight = 30
+[[menu.main]]
 name = "Blog"
 pageRef = "/blog/"
-weight = 30
+weight = 40
 [[menu.main]]
 name = "Members"
 pageRef = "/members/"
-weight = 40
+weight = 50
 
 [services.rss]
 limit = 42
