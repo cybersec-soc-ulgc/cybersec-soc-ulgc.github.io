@@ -2,7 +2,7 @@
 title = 'HTB Writeup: Behind the Scenes'
 description = 'Complete Writeup for Hack The Box Reverse Engineering Challenge Behind the Scenes'
 draft = false
-date = 2025-08-28T07:07:07+01:00
+date = 2025-10-01T07:07:07+01:00
 +++
 
 **Author: Shruti Priya**
