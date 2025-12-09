@@ -5,7 +5,7 @@ title = "Members"
 Meet our active members:
 
 {{< notice >}}
-**Shruti Priya** (`@ghalibluvr`)
+**[Shruti Priya](https://shrutipriya.com/)** (`@ghalibluvr`)
 <br>Works on: `rev`, `crypto`
 {{< /notice >}}
 
