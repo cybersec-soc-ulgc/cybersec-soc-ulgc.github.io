@@ -12,5 +12,6 @@ Welcome to the blogpage for the CTF Team: `cybersec_soc_ulgc`.
 
 **Achievements:**
 - Top 30% in ImaginaryCTF 2025.
+- Top 35% in SECCON CTF 14 Quals
 
 Join the team at [ULGC Discord Server](https://my.london.ac.uk/group/student/community)!
