@@ -57,8 +57,8 @@ name = "Writeups"
 pageRef = "/writeups/"
 weight = 20
 [[menu.main]]
-name = "WCS"
-pageRef = "/weekly-challenges-series/"
+name = "Christmas Carols"
+pageRef = "/christmas-carols/"
 weight = 30
 [[menu.main]]
 name = "Blog"
