@@ -10,7 +10,7 @@ Welcome to the Christmas Special Event by Cybersecurity Society ULGC. This Chris
 - Challenges will be released here and on the Discord server. 
 - All challenges will be released on **`Christmas Eve @ 3:00 PM BST`**.
 - All challenges are beginner friendly, we want you to have fun and learn something new!
-- This event resembles a CTF, once you solve a challenge you will get a flag in the format `christmas_carol{flag}`. This is the "answer" of the challenge.
+- This event resembles a CTF, once you solve a challenge you will get a flag in the format `christmas_carol{flag}`. This is the _"answer"_ of the challenge.
 
 #### Flag submission process:
 - Once you have solved all challenges, submit the flags in the `Google Form` shared alongwith the challenges.
