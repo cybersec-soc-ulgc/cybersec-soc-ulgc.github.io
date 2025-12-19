@@ -1,13 +1,13 @@
 +++
-title = 'ImaginaryCTF 2025 Pwn Writeup: imaginary-notes'
-description = 'Writeup for ImaginaryCTF 2025 Pwn Challenge Imaginary-Notes'
+title = 'ImaginaryCTF 2025 Web Writeup: imaginary-notes'
+description = 'Writeup for ImaginaryCTF 2025 Web Challenge Imaginary-Notes'
 date = 2025-09-24
 author = 'David Craddock'
 +++
 
 **Author: David Craddock**
 
-I solved the [ImaginaryCTF 2025 Pwn Challenge imaginary-notes](https://2025.imaginaryctf.org/Challenges).
+I solved the [ImaginaryCTF 2025 Web Challenge imaginary-notes](https://2025.imaginaryctf.org/Challenges).
 
 As it was my first CTF (ever!) I made the mistake of not fully documenting what I was doing when I was doing it. Don't make my mistake! Make sure to take notes as you go through. I will attempt to piece together what I did in a summary version here.
 
