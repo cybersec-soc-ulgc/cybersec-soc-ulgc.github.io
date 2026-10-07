@@ -30,3 +30,26 @@ I hope this event will be super exciting and fun, see you all there.
 
 --- Shruti Priya, Presider
 
+{{< notice >}}
+**Important Stuff**<br><br>
+Find the live session slides, source code and code snippets on our Github Repository: [https://github.com/cybersec-soc-ulgc/re-bootcamp-ulgc](https://github.com/cybersec-soc-ulgc/re-bootcamp-ulgc)
+{{< /notice >}}
+
+### DAY 1
+
+We talked about the x86-64 assembly language with an introduction to memory hierarchy and the stack. Following is a code snippet written in x86-64 assembly. Your task is to figure out what this piece of code is doing. Send us your answers in Discord. 
+
+If you are stuck or need further help, ping Shruti (`@ghalibluvr`) on Discord. We will discuss the code snippet and the solution on Day 2. Good luck!
+
+```nasm
+.intel_syntax noprefix
+.globl _start
+
+_start:
+mov	rax, 40
+mov	rbx, 20
+add	rax, rbx
+mov	rdi, 1337
+syscall
+```
+
