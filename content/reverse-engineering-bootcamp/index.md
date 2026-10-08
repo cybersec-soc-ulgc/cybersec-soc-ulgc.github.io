@@ -53,3 +53,18 @@ mov	rdi, 1337
 syscall
 ```
 
+### Solution
+
+The program is moving the value `40` inside the register `RAX`. Then, the program moves the value `20` inside the register `RBX`. Finally, the program adds those two registers and places the sum in the register `RAX`. `RAX` now contains the value `60`. The program then proceeds to put the value `1337` inside the register `RDI`.
+
+According the Linux/UNIX calling conventions, the `syscall` value should be placed in register `RAX` and the first argument should be in the register `RDI`. In our code snippet, the `syscall` number inside `RAX` is `60` and the first argument inside `RDI` is `1337`. Hence, the program simply exits with the return code `1337`.
+
+
+### DAY 2
+
+Reverse engineer the following binary and apply patches to make the program print the string `FLAG!`.
+
+{{< notice >}}
+**Download the binary here:** [day-2-snippet](https://transfer.it/t/QhJwsClVBDYK)<br>
+**MD5 Checksum:** `0e7bee97266008400a627774444a5dc6`
+{{< /notice >}}
