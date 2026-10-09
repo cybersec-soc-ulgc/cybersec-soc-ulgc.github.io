@@ -53,7 +53,7 @@ mov	rdi, 1337
 syscall
 ```
 
-### Solution
+#### Solution
 
 The program is moving the value `40` inside the register `RAX`. Then, the program moves the value `20` inside the register `RBX`. Finally, the program adds those two registers and places the sum in the register `RAX`. `RAX` now contains the value `60`. The program then proceeds to put the value `1337` inside the register `RDI`.
 
@@ -67,4 +67,27 @@ Reverse engineer the following binary and apply patches to make the program prin
 {{< notice >}}
 **Download the binary here:** [day-2-snippet](https://transfer.it/t/QhJwsClVBDYK)<br>
 **MD5 Checksum:** `0e7bee97266008400a627774444a5dc6`
+{{< /notice >}}
+
+
+#### Solution
+
+By disassembling the binary in IDA/Ghidra we notice that the program is moving 3 different values in different memory locations. The program then proceeds to add these values together and compare the sum with `0x63` or `99`.
+
+![IDA Screenshot](./images/ida-1.png)
+
+We notice that the three values added together actually equal `0x64` or `100`. Since the comparison always fails, the program never prints the string `FLAG!`. We patch the `CMP` instruction by changing the value from `0x63` to `0x64`.
+
+![IDA Screenshot 2](./images/ida-2.png)
+
+Now, the `CMP` instruction returns true and we successfully trigger the instruction for printing the string `FLAG!`.
+
+
+### Day 3
+
+This is the final project for the Reverse Engineering Bootcamp. We will solve this challenge during the final session together. But, you are free to play around with it and find the flag. Download the binary and happy hacking!
+
+{{< notice >}}
+**Download the binary here:** [final_app](https://transfer.it/t/KF0VoS0RwDiB)<br>
+**MD5 Checksum:** `efad48af8919056b7e8564fc11175ffe`
 {{< /notice >}}
