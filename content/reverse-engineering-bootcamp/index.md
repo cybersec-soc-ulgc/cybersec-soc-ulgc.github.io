@@ -91,3 +91,40 @@ This is the final project for the Reverse Engineering Bootcamp. We will solve th
 **Download the binary here:** [final_app](https://transfer.it/t/KF0VoS0RwDiB)<br>
 **MD5 Checksum:** `efad48af8919056b7e8564fc11175ffe`
 {{< /notice >}}
+
+#### Solution
+
+Looking at the final project with `strings` and `objdump`, we find two functions: `main()` and `encflag()`. After disassembling the binary in IDA, we see that the `main()` function takes some bytes as input and passes them to the `encflag()` function.
+
+![Final Project Screenshot 1](./images/final-1.png)
+
+![Final Project Screenshot 2](./images/final-2.png)
+
+In the `encflag()` function, our input is XOR-ed with a value and compared with another value in memory. If the comparison does not return true, the program exits by printing the string `Oops, that wasn't it ;)`. 
+
+![Final Project Screenshot 3](./images/final-3.png)
+
+By putting all this information together, we understand that our input should pass the comparison check. Since, XOR is a reversible operation, we can find the correct input by XOR-ing the 4 values in the disassembly with the value `0xd`. We use [pwntools](https://docs.pwntools.com/en/stable/) to construct an exploit and get the flag. 
+
+```python
+from pwn import *
+
+context.arch = "amd64"
+
+#p = gdb.debug("./final_app", '''
+#                b main
+#                b encflag
+#                ''')
+p = process("./final_app")
+
+payload = p64(0x7b687f766e6a6178) + p64(0x6a636852687e7f3e) + p64(0x6a63647f683e632c) + p64(0x7043786b527e3c52)
+
+flag = b''
+
+for i in payload:
+    flag += (i ^ 13).to_bytes(1, 'little')
+
+p.send(flag)
+p.interactive()
+```
+
